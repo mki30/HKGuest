@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="/BootStrap/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        table
+        {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .border td
+        {
+            border: 1px solid #c0c0c0;
+        }
+
+        a
+        {
+            text-decoration: none;
+        }
+
+        select
+        {
+            padding: 3px 0px;
+        }
+
+        .table-padded > tbody > tr > td, .table-padded > tbody > tr > th, .table-padded > tfoot > tr > td, .table-padded > tfoot > tr > th, .table-padded > thead > tr > td, .table-padded > thead > tr > th
+        {
+            padding: 0px 5px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container-fluid" style="background: white; height: 100%;" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
